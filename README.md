@@ -92,13 +92,13 @@ Normal channels with names that adhere to Slacks channel naming convention (max 
 
 If you need to join other types of channels, you need to add a channel configuration in the channel "Purpose" field. The value of this field should be a JSON formatted string containing the following fields:
 
-*  `channelName`: The IRC channel name to use
+*  `channelName`: The IRC channel name to use, with or without a channel key (password)
 
 For example:
 
 ```json
 {
-  "channelName": "!CUCREslack-irc-client"
+  "channelName": "!CUCREslack-irc-client secret"
 }
 ```
 
